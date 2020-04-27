@@ -5,6 +5,7 @@ const App = () => {
   const courses = [
     {
       name: 'Half Stack application development',
+      id: 1,
       parts: [
         {
           name: 'Fundamentals of React',
@@ -44,7 +45,7 @@ const App = () => {
 
   return (
     <div>
-      {courses.map(course => <Course course={course}/>)}
+      {courses.map(course => <Course key={course.id} course={course}/>)}
     </div>
   )
 }
