@@ -1,7 +1,9 @@
 import axios from 'axios'
 
-//For development use 'http://localhost:3001/persons'
-const baseUrl = '/persons'
+//For development use the below
+const baseUrl = 'http://localhost:3001/persons'
+//For build use the below
+// const baseUrl = '/persons'
 
 const getAll = () => {
     const request = axios.get(baseUrl)
